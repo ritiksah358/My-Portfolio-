@@ -1,0 +1,40 @@
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+      display: none;
+  }
+
+  #hamburger-nav {
+      display: flex;
+  }
+
+  .menu-links {
+      display: none;
+      flex-direction: column;
+      background-color: #343a40;
+      width: 100%;
+      text-align: center;
+  }
+
+  .menu-links li {
+      margin: 1em 0;
+  }
+
+  .hamburger-menu.open .menu-links {
+      display: flex;
+  }
+
+  .hamburger-icon {
+      cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #hamburger-nav {
+      display: none;
+  }
+
+  #desktop-nav {
+      display: flex;
+  }
+}
